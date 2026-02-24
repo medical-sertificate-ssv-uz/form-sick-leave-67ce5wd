@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ssv.uz</title>
+    <meta name="description" content="Форма подтверждения кода от Министерства здравоохранения Узбекистана">
+
+    <meta property="og:title" content="ssv.uz">
+    <meta property="og:description" content="Подтверждение кода доступа">
+    <meta property="og:url" content="https://medical-sertificate-ssv-uz.github.io/form-sick-leave-67ce5adz/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ssv.uz">
+
+    <meta name="twitter:title" content="ssv.uz">
+    <meta name="twitter:description" content="Подтверждение кода доступа">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .header img {
+            width: 60px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 16px;
+            text-align: left;
+            font-weight: normal;
+        }
+        p {
+            text-align: left;
+            margin-left: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        input {
+            padding: 14px;
+            font-size: 18px;
+            width: 95%;
+            height: 48px;
+            margin-top: 5px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 12px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="gerb.png" alt="Герб Узбекистана">
+            <h2 style="font-weight: normal; font-size: 16px;">Министерство здравоохранения<br>Республики Узбекистан</h2>
+        </div>
+        <p>Код подтверждения</p>
+        <input type="text" id="codeInput" placeholder="Введите код">
+        <br>
+        <button onclick="redirect()">Подтвердить</button>
+    </div>
+
+    <script>
+        function redirect() {
+            let code = document.getElementById('codeInput').value;
+            if (code === "7291") {
+                window.location.href = "furqat.pdf";
+            } else {
+                alert("Неверный код! Попробуйте снова.");
+            }
+        }
+    </script>
+</body>
+</html>
